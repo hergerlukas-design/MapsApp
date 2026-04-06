@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0a0a0a;
+  color: #00f2ff;
+  overflow: hidden;
+}
+
+/* Mapbox Attribution – Pflicht laut Mapbox ToS, darf nicht ausgeblendet werden */
+.mapboxgl-ctrl-attrib {
+  background: rgba(10, 10, 10, 0.7) !important;
+  color: #888 !important;
+  font-size: 10px !important;
+}
+.mapboxgl-ctrl-attrib a {
+  color: #00f2ff !important;
+}
+
+/* Zwingt die Mapbox-Karte dazu, IMMER die Rundung des Rahmens anzunehmen */
+.mapboxgl-map, .mapboxgl-canvas {
+  border-radius: inherit !important;
+  width: 100% !important;
+  height: 100% !important;
+  outline: none !important;
+}
